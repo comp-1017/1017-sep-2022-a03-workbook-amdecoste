@@ -59,7 +59,7 @@
             instead you can use a special character strings to represent components
                 of the tag such as < (&lt;) and the (&gt;) symbols
         -->
-        <h3> List tags: &lt;ol&gt;</h3>
+        <h3> List tags: &lt; ol&gt;</h3>
         <!-- block tag 
             create an order list (numberbered) using <ol>
             create an unordered list (bulleted) using <ul>
@@ -101,6 +101,32 @@
                     _blank will open the desination in a new browser tab (page)
             
         -->
-        <a> hfer="https://nait.ca"> target="_blank"> go to Nait</a>
+       
+        <h3>Image Tag</h3>
+        <!--
+            empty (void) tag
+            The image tag does not have a closing tag because there is no content to display
+            Parameters:
+                SRC = "releative web site location"
+                alt="printable text if image is not found on file"
+                [title="tool tip text for the image"]
+
+            The relative path is from the top of your web site down/up to the file/page you desire to refrence
+
+            Down: include all subfolder names and the final file name
+                sf1/sf2/..../fn
+            Up: use the string .. to do up a level (subfolder)
+            ../../sf1/fn
+        -->
+        <img src="img/photoshop.png" alt="photoshop logo"
+            title="the Adobe photoshop logo">
     </body>
+    <!-- 
+        can i use an image as the link to the www.adobe.com page?
+    -->
+    <a href= "https://www.adobe.com"> target = "_blank">
+        <img src="img/photoshop.png" alt="Adobe Website"
+        title="go to Adobe web site"
+        style="width:80px; height: 80px;">
+    </a>
 </html>
