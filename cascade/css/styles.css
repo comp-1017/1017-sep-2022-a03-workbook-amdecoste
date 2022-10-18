@@ -1,0 +1,95 @@
+footer{
+    background-color: #333;
+    color: yellow;
+}
+
+/***************************
+
+make a specific class with your css rule
+***************************/
+
+/*
+.nav-background{
+    background-color: #ddd;
+}
+*/
+/***************************
+decendant selector
+***************************/
+ul{
+    background-color: black;
+}
+
+nav ul{
+    background-color: #ddd;
+}
+/***************************
+Specificity
+it is a value assigned to the selector depending on meeting
+    different criteria
+
+selector type
+element selector type get a value of 1
+class selecotr type get a value of 10
+id selector get a value of 100
+Special NOTE: All incline styling get a value of 1000
+
+specificity decission are base on the value of the selector
+
+
+If the specificity of conflicting rules is the same then
+    the last coded
+***************************/
+footer,
+footer a{
+    color: white;
+}
+/***************************
+first set an element li to a border-bottom
+
+concern: BOTH nav and footer li were affected
+
+soluction
+a) use a decendant selector (nav li > li)
+b) us a class selector (li-border > li) 10 > 1;)
+***************************/
+.li-border{
+    border-bottom: 1px solid black;
+}
+nav ul li{
+    border-bottom: 5px dotted blue;
+}
+nav ul li a{
+    border-bottom: 5px dotted blue;
+}
+/***************************
+Classes:
+syntax is .user-name {rules}
+you are not to use element name
+user name must be meaningful AND may include the element name
+classes are independant of an element
+classes can be attacted to any element
+on html page, to use; <element class="usernname [username2 ...]>
+
+types: user {targeted} class
+    psuedo class, these are attached to elements
+
+example: anchor tag
+NOTE: the order in which you can code your psuedo classes for the
+    anchor tag is exteremly important
+
+a:link  unused link
+a:hover used when your cursor hovers over link
+a:visited used when you visited link
+a:active    used when you are using the link
+***************************/
+nav ul li a:hover{
+    color: blue;
+    font-size: smaller;
+    font-weight: lighter;
+}
+nav ul li a:active{
+    color: red;
+    font-weight: bold;
+    font-size: larger;
+}
