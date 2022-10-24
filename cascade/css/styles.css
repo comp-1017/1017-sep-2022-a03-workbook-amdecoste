@@ -83,6 +83,9 @@ a:hover used when your cursor hovers over link
 a:visited used when you visited link
 a:active    used when you are using the link
 ***************************/
+nav ul li a:visited{
+    color: green;
+}
 nav ul li a:hover{
     color: blue;
     font-size: smaller;
