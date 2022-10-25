@@ -52,6 +52,8 @@ content: by default this the display area of your element content
     you can specify a width for your content however the width plus your measurments SHOULD NOT exceed the width of your page (if the page width is set to a specific value)
 
 calculation page-width =1m + 1b + 1p + content + rb + rb + rm
+once we start using flewx-bot which allows for multiple elements
+    the equal is explanded to next-page = Sum(element 
 
 Assume A fixed center page width of 960
 
