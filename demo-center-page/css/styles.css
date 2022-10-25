@@ -1,0 +1,67 @@
+body {
+	background-color: aqua;
+}
+
+.container {
+	margin:0 auto;
+	width:960px;
+	font-size: 100%;
+	line-height: 1.5;
+}
+
+/*****************************
+	Typography (module 3)
+	affectys the styling of text
+*****************************/
+h1,
+h2{
+	padding:10px;
+	text-align: center;
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #747474;
+}
+
+/*****************************
+	Layout
+	these rules will affect the physical positioning
+		of element they do which they are applied
+*****************************/
+
+nav{
+	margin: top 48px;
+	background-color: #ddd;
+}
+
+header,
+main{
+	height:480px;
+	margin-top: 24px;
+	background-color: #ddd;
+}
+main{
+	height: 800px;
+}
+footer{
+	height:150px;
+	margin: 24px 0 48px 0;
+	background-color: #ddd;
+}
+
+/**************************************
+	what is the required width of section
+
+	box model
+		page width = lm + lb + lp + connect width + rp + rb + rm
+		
+
+***************************************/
+
+main section{
+	border: 2px solid black;
+	margin: 30px;
+	height: 200px;
+	background-color: white;
+	width: 
+}
