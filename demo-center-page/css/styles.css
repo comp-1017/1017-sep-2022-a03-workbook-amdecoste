@@ -9,19 +9,20 @@ body {
 	line-height: 1.5;
 }
 
+
 /*****************************
 	Typography (module 3)
 	affectys the styling of text
 *****************************/
-h1,
-h2{
+	h1,
+	h2{
 	padding:10px;
 	text-align: center;
 	font-family: Arial, sans-serif;
 	font-size: 20px;
 	font-weight: bold;
 	color: #747474;
-}
+	}
 
 /*****************************
 	Layout
@@ -29,39 +30,42 @@ h2{
 		of element they do which they are applied
 *****************************/
 
-nav{
-	margin: top 48px;
+	nav{
+		margin: top 48px;
 	background-color: #ddd;
-}
+	}
 
-header,
-main{
+	header,
+	main{
 	height:480px;
 	margin-top: 24px;
 	background-color: #ddd;
-}
-main{
+	}
+	main{
 	height: 800px;
-}
-footer{
+	}
+	footer{
 	height:150px;
 	margin: 24px 0 48px 0;
 	background-color: #ddd;
-}
+	}
 
 /**************************************
 	what is the required width of section
 
 	box model
-		page width = lm + lb + lp + connect width + rp + rb + rm
-		
+		page width = lm + lb + lp + content width + rp + rb + rm
+		960 = 30 + 2 + 0 + content + 0 + 2 + 30
+		960 - 46 + width
+		960 -64 = width
+		880 = width
 
 ***************************************/
 
-main section{
+	main section{
 	border: 2px solid black;
 	margin: 30px;
 	height: 200px;
 	background-color: white;
-	width: 
-}
+	width: 880px;
+	}

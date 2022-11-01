@@ -7,7 +7,8 @@ body {
     width: 960px;
     margin: 0 auto;
     font-size: 100%;
-    line-height: 1.5
+    line-height: 1.5;
+    ;
 }
 
 
@@ -34,3 +35,79 @@ body {
 .clearfix {
     *zoom: 1;
 }
+main{ 
+    background-color: lightgrey;
+    display: flex;
+   /*  flex-wrap: wrap; */ 
+}
+footer{
+    background-color: lightgrey;
+    display: flex;
+}
+
+/*****************************************************
+given classes some height and width due to the fact that the elements do NOT
+    contain any textual content
+set height to ta chosen value of 300px
+set the width of each box to fix the final given image
+margin: 30px
+padding and border: 0
+page width is 960;
+
+page-width = (box) + (box) + ... + remainder
+
+page-width = ncolumns + (box) + remainder
+960 = 2 * (lm + lb + lp + content rm + rb + rp) + remainder
+960 = 2 (30 + 0 + 0 + content + 0 + 0 + 0) + 30
+960 = 60 + 30 + 2content
+960 - 90 = 2content
+870 / 2 = content
+435 = content
+*************************************************/
+.red-paint{
+    height: 300px;
+    width: 435px;
+    background-color: red;
+    margin-left: 30px;
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+.blue-paint{
+    height: 300px;
+    width: 435px;
+    background-color:  blue;
+    margin-left: 30px;
+    margin: 30px 0 30px 30px
+}
+.black-paint{
+    height: 50px;
+    width: 970px;
+    background-color:  black;
+    margin-left: 30px;
+    margin: 0 0 30px 30px
+}
+/***********************************************
+default display is stacking
+
+to get elements onm the same line we use something called flexbox 
+to invoke flexbox use the rule::after
+        display:flex
+
+    flexbox attepts to place all elements within its "imidiate specified container on the same line
+
+    flexbox will automatically ajust the measurements to fit everything on the same line
+
+    problem i Dont want all elements on the same line having their measurments altered
+
+    solution after the default wrapping for flexbox which is none
+
+    rule flex-wrap: wrap;
+
+    this will place as many elements as possible on a sigle row without adjusting the measurments of your elemtens
+    any leftover elements will wrap to the following line until all elements are used
+
+    warning flex:wrap affect a flex display area without the display:flex the flex:wrap is pointless
+
+    flexbox will affect positioning that is normal within your page such as margin collapse
+
+***********************************************/
