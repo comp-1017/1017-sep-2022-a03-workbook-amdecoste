@@ -8,8 +8,42 @@ body {
 	font-size: 100%;
 	line-height: 1.5;
 }
-.red-paint {
-	width:150px;
-	background-color: red;
-	margin: 10px,10px,10px,10px;
+main{ 
+    background-color: lightgrey;
+    display: flex;
+    flex-wrap: wrap;
+	border: solid 2px;
+}
+.red-paint{
+	height: 600px;
+    width: 150px;
+    background-color: red;
+    margin-left: 10px;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+/********************************************
+960 = 2(10 + 0 + 0 + content + 0 + 0 + 0)
+960 = 2(10 + content)
+960 = 20 + 2content
+960 - 20 = 2content
+940/2= content
+470 + 150 = content
+620 = content
+********************************************/
+.blue-paint{
+	height: 295px;
+    width: 780px;
+    background-color: blue;
+    margin-left: 10px;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.green-paint{
+	height: 295px;
+    width: 780px;
+    background-color: green;
+    margin-left: 10px;
+    margin-top:10px;
+    margin-bottom: 10px;
 }
