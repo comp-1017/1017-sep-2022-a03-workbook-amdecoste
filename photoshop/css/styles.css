@@ -1,0 +1,64 @@
+body {
+	background-color: white;
+}
+ 
+.container {
+	margin:0 auto;
+	width:960px;
+	font-size: 100%;
+	line-height: 1.5;
+	background-image: url(../img/pattern-bg.gif) repeat;
+	/* font-family: 'Alegreya Sans', sans-serif; */
+}
+
+header{
+	height:70px;
+	background-color: #fff;
+	border-bottom: 1px solid #959372;
+}
+header h1{
+	display: none;
+}
+/* when you use a class, you cna assign the class to any number of element tags in your html unlike using element seletors which are spesific 
+.hidden{
+	display: none;
+}
+*/
+header > img{
+	margin: 14px;
+}
+/* style the banner
+	move the banner down by using the margin-top
+	added the background image which has NO effect
+	*/
+.navbanner{
+	background-image: url(../img/pattern-bg.gif) repeat;
+	height:690px;
+	padding-top: 60;
+}
+.banner{
+	margin-top: 60px;
+	background-image: url(../img/flower-banner.jpg) ;
+	height:420px; /* this is for the content area not the image 480 - 60 = 420*/
+	padding: 60px 0 0 680px;
+}
+.banner h2 {
+	font-family: 'Alegreya Sans', sans-serif;
+	font-size: 36px;
+	color: #f9ea4f;
+	font-style: italic;
+}
+/* anchor elements */
+
+.banner a{
+	color: #faf9f8;
+	font-size: 18px;
+	text-decoration: none;
+}
+.banner a:hover{
+	color:#f9ea4f;
+}
+
+.banner li{
+	line-height: 40px;
+}
